@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Форма валідації</title>
+</head>
+<body>
+    <form id="form">
+        <h1>Форма валідації</h1>
+
+        <div class="input-control">
+            <label for="fullname">ПІБ</label>
+            <input type="text" name="fullname" id="fullname" placeholder="ТТТТТТ Т. Т.">
+            <p class="error"></p>
+        </div>
+
+        <div class="input-control">
+            <label for="id-card">ID-card</label>
+            <input type="text" name="id-card" id="id-card" placeholder="ТТ №ЧЧЧЧЧЧ">
+            <p class="error"></p>
+        </div>
+
+        <div class="input-control">
+            <label for="faculty">Факультет</label>
+            <input type="text" name="faculty" id="faculty" placeholder="ТТТТ">
+            <p class="error"></p>
+        </div>
+
+        <div class="input-control">
+            <label for="date-of-birth">Дата народження</label>
+            <input type="text" name="date-of-birth" id="date-of-birth" placeholder="ЧЧ.ЧЧ.ЧЧЧЧ">
+            <p class="error"></p>
+        </div>
+
+        <div class="input-control">
+            <label for="address">Адреса</label>
+            <input type="text" name="address" id="address" placeholder="м. ТТТТТТ">
+            <p class="error"></p>
+        </div>
+
+        <button type="submit">Перевірити</button>
+
+    </form>
+    <div id="output"></div>
+    <script src="script.js"></script>
+</body>
+</html>
